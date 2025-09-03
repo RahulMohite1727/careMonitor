@@ -1,0 +1,22 @@
+  <div class="center">
+    <mat-card>
+      <h2>Login</h2>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <mat-form-field class="w-100">
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email" type="email">
+        </mat-form-field>
+
+        <mat-form-field class="w-100">
+          <mat-label>Password</mat-label>
+          <input matInput formControlName="password" type="password">
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" [disabled]="form.invalid || loading">
+          {{ loading ? 'Signing in…' : 'Login' }}
+        </button>
+      </form>
+      <app-loading-spnner *ngIf="loading"></app-loading-spnner>
+      <p class="error" *ngIf="error">{{ error }}</p>
+    </mat-card>
+  </div>

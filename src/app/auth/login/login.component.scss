@@ -1,0 +1,21 @@
+   .center {
+       display: flex;
+       height: 100dvh;
+       align-items: center;
+       justify-content: center;
+       padding: 16px;
+   }
+
+   .w-100 {
+       width: 100%;
+   }
+
+   mat-card {
+        padding: 20px;
+       width: 380px;
+   }
+
+   .error {
+       color: #c62828;
+       margin-top: 8px;
+   }

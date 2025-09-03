@@ -1,0 +1,17 @@
+  <div class="wrap">
+    <div class="header">
+      <h2>Items</h2>
+       <button mat-stroked-button color="primary" routerLink="/dashboard">
+    Back to Dashboard
+  </button>
+    </div>
+    <app-loading-spnner *ngIf="store.loading$ | async"></app-loading-spnner>
+    <p class="error" *ngIf="store.error$ | async as e">{{ e }}</p>
+
+    <div class="grid">
+      <mat-card *ngFor="let it of (store.items$ | async)" class="item">
+        <mat-card-title>{{ it.name }}</mat-card-title>
+        <mat-card-content>{{ it.description }}</mat-card-content>
+      </mat-card>
+    </div>
+  </div>
