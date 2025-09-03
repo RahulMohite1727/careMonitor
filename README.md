@@ -54,8 +54,8 @@ src/app/
 ## Setup
 ```bash
 ## Clone the repository:
- git clone https://github.com/your-username/angular-auth-items-demo.git
-cd angular-auth-items-demo
+ git clone https://github.com/RahulMohite1727/careMonitor
+cd careMonitor
 ## Install dependencies:
 npm install
 ## Run the development server
