@@ -15,12 +15,12 @@ export class TokenService {
     this.cookies.set(USER_EMAIL, email, { sameSite: 'Lax', path: '/' });
   }
   get(): string | null {
-    const v = this.cookies.get(TOKEN_KEY);
-    return v || null;
+    const value = this.cookies.get(TOKEN_KEY);
+    return value || null;
   }
   userEmail(): string | null {
-    const v = this.cookies.get(USER_EMAIL);
-    return v || null;
+    const value = this.cookies.get(USER_EMAIL);
+    return value || null;
   }
   clear() {
     this.cookies.delete(TOKEN_KEY, '/');
