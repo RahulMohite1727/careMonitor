@@ -27,7 +27,7 @@
 -Includes a reusable app-loading-spinner for user feedback
 ## Technical
 
--Angular (latest recommended version)
+-Angular 19
 -Angular Material for UI consistency
 -RxJS best practices for API calls
 -Feature-based modular architecture
