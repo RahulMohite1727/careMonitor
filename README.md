@@ -4,7 +4,7 @@
 - Token auto-attached via `AuthInterceptor`.
 - Dashboard shows the user’s email and nav to list.
 - Items list fetched from GET `/api/items`.
-- State managed with `@ngrx/component-store` (loading + error).
+- State managed with `component-store` (loading + error).
 - Lazy-loaded ItemsModule.
 - Dev mock API implemented in-app.
 - Angular Material for UI and a loading spinner.
